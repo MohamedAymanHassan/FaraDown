@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon-32x32px.png" type="image/x-icon">
+    <title>FaraDown</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="icon">
+          <img style="width: 40px;" src="./favicon-32x32px.png" alt="FaraDown Logo" />
+        </div>
+        <h1>
+          Your ultimate destination for high-quality downloads, resources, and digital content in one place.
+        </h1>
+        <div class="hero-actions">
+          <a href="#products"><button class="btn primary">Browse</button></a>
+        </div>
+      </section>
+
+      <div class="ad ad-top">Ad Banner 728×90</div>
+
+      <!-- Products -->
+      <section id="products" class="grid">
+        <!-- Popup -->
+        <div id="popupOverlay" class="overlay hidden">
+          <div class="popup">
+            <button class="close-btn" id="closePopup">✕</button>
+
+            <h2>Please wait</h2>
+            <p>Preparing your download...</p>
+
+            <div class="timer" id="timer">20</div>
+
+            <div class="ad ad-popup">Popup Ad</div>
+            <button id="finalDownload" class="download-btn hidden">
+              Download Now
+            </button>
+          </div>
+        </div>
+        <!-- /Popup -->
+
+        <article class="card">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>iOS Icons</h3>
+              <p>Traf</p>
+            </div>
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="./728x90-kikkoman.webp"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>iOS Icons</h3>
+              <p>Traf</p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="files/ios-icons.zip"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <div class="ad ad-row">Ad 970×250</div>
+
+        <article class="card">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>iOS Icons</h3>
+              <p>Traf</p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="files/ios-icons.zip"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>iOS Icons</h3>
+              <p>Traf</p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="files/ios-icons.zip"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <div class="ad ad-footer">Ad 1200 × 250</div>
+
+      <!-- Footer -->
+      <footer>
+        <span>By Faramawy</span>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
