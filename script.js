@@ -7,15 +7,14 @@ let countdown;
 let timeLeft = 20;
 let downloadLink = "";
 
-// لكل زرار Download
+// لكل زر Download (class="openPopup")
 document.querySelectorAll(".openPopup").forEach((btn) => {
   btn.addEventListener("click", () => {
-    downloadLink = btn.dataset.download;
+    downloadLink = btn.dataset.download; // قراءة الرابط من data-download
 
     overlay.classList.remove("hidden");
     timerEl.style.display = "block";
     finalDownload.classList.add("hidden");
-    downloadLink = btn.dataset.download;
 
     timeLeft = 20;
     timerEl.textContent = timeLeft;
@@ -39,28 +38,8 @@ closeBtn.onclick = () => {
   clearInterval(countdown);
 };
 
-// زر التحميل النهائي
 finalDownload.onclick = () => {
-  window.location.href = downloadLink;
-};
-
-
-
-
-
-
-
-
-
-
-
-document.querySelectorAll(".openPopup").forEach(btn => {
-  btn.addEventListener("click", () => {
-    downloadLink = btn.dataset.download;
-    // فتح popup + تشغيل التايمر
-  });
-});
-
-finalDownload.onclick = () => {
-  window.location.href = downloadLink;
+  if (downloadLink) {
+    window.open(downloadLink, "_blank");
+  } // نافذة جديدة/tab
 };
