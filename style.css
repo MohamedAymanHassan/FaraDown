@@ -9,6 +9,7 @@
 
 * {
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -293,3 +294,4 @@ footer span {
   object-fit: cover;
   border-radius: 12px;
 }
+
