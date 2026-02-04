@@ -41,8 +41,8 @@ a {
 }
 
 .hero .icon {
-    width: 36px;
-    height: 36px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     margin: 0 auto 24px;
     display: grid;
@@ -293,3 +293,4 @@ footer span {
   object-fit: cover;
   border-radius: 12px;
 }
+
