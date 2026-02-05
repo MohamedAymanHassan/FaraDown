@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <title>FaraDown</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="icon">
+          <img style="width: 40px" src="./assets/logo.png" alt="FaraDown Logo" />
+        </div>
+        <h1>
+          Your ultimate destination for high-quality downloads, resources, and
+          digital content in one place.
+        </h1>
+
+        <div class="hero-actions">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+            class="search-input"
+          />
+
+          <a href="#products">
+            <button class="btn primary">Browse</button>
+          </a>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="apps">Apps</button>
+          <button class="filter-btn" data-filter="games">Games</button>
+          <button class="filter-btn" data-filter="movies">Movies</button>
+          <button class="filter-btn" data-filter="series">Series</button>
+          <button class="filter-btn" data-filter="websites">Websites</button>
+          <button class="filter-btn" data-filter="ui">UI</button>
+        </div>
+      </section>
+
+      <!-- <div class="ad ad-top">Ad Banner 728×90</div> -->
+
+      <!-- Products -->
+      <section id="products" class="grid">
+        <!-- Popup -->
+        <div id="popupOverlay" class="overlay hidden">
+          <div class="popup">
+            <button class="close-btn" id="closePopup">✕</button>
+
+            
+            <h2 id="popupTitle"></h2>
+            <p id="popupDescription"></p>
+            
+            <h2>Please wait</h2>
+            <p>Preparing your download...</p>
+            
+            <div class="timer" id="timer">20</div>
+
+            <button id="finalDownload" class="download-btn hidden">
+              Download Now
+            </button>
+
+            <div class="ad ad-popup">Popup Ad</div>
+          </div>
+        </div>
+        <!-- /Popup -->
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <article class="card product-card" data-category="apps all">
+          <div class="thumb">
+            <img src="./assets/photoshop-preview-photo.svg" alt="" />
+          </div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Adobe Photoshop 2026 for Windows</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                The password for Zip file is:
+                <span style="color: red">123</span>
+              </p>
+            </div>
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+              data-title="iOS Icons Pack"
+              data-description="A full iOS-style icon pack including hundreds of high-quality icons optimized for mobile and web applications. Compatible with modern UI systems."
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="apps all">
+          <div class="thumb">
+            <img src="./assets/illustrator-preview-photo.svg" alt="" />
+          </div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Adobe Illustrator 2026 for Windows</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                The password for Zip file is:
+                <span style="color: red">123</span>
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="apps all">
+          <div class="thumb">
+            <img src="./assets/premiere-preview-photo.svg" alt="">
+          </div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Adobe Premiere Pro 2026 for Windows</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="websites all">
+          <div class="thumb">
+            <img src="./assets/lava-website-preview-photo.svg" alt="">
+          </div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Lava Website with HTML & CSS for Free</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >1.8MB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://frdl.io/wpvuk2up3qdw/Lava_Website_(from_FaraDown).zip.html"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!-- ad between each 4 products -->
+
+        <div class="ad ad-row ad-between-products">Ad 970×250</div>
+
+        <!-- ad between each 4 products -->
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <article class="card product-card" data-category="websites all">
+          <div class="thumb">
+            <img src="./assets/digimedia-website-preview-photo.svg" alt="">
+          </div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>DigiMedia Website with HTML & CSS for Free</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >1.8MB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://frdl.io/xwi3e7d7ap0w/DigiMedia_(from_FaraDown).zip.html"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="ui all">
+          <div class="thumb">
+            <img src="./assets/ios-16-ui-kit-for-figma.png" alt="">
+          </div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>iOS 16 UI kit for Figma</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >---MB</span
+                >
+                by Joey Banks
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.figma.com/community/file/1121065701252736567/ios-16-ui-kit-for-figma"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+
+
+
+        
+
+        <article class="card product-card" data-category="apps all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Adobe Photoshop</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="games all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Pubg mobile hacked</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!-- ad between each 4 products -->
+
+        <div class="ad ad-row ad-between-products">Ad 970×250</div>
+
+        <!-- ad between each 4 products -->
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <article class="card product-card" data-category="games all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Pubg mobile hacked</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="games all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Pubg mobile hacked</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="apps all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Adobe Photoshop</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="games all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Pubg mobile hacked</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!-- ad between each 4 products -->
+
+        <div class="ad ad-row ad-between-products">Ad 970×250</div>
+
+        <!-- ad between each 4 products -->
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <article class="card product-card" data-category="games all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Pubg mobile hacked</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="games all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Pubg mobile hacked</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="apps all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Adobe Photoshop</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="games all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Pubg mobile hacked</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!-- ad between each 4 products -->
+
+        <div class="ad ad-row ad-between-products">Ad 970×250</div>
+
+        <!-- ad between each 4 products -->
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <article class="card product-card" data-category="games all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Pubg mobile hacked</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="games all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Pubg mobile hacked</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="apps all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Adobe Photoshop</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+
+        <article class="card product-card" data-category="games all">
+          <div class="thumb">Preview</div>
+
+          <div class="card-footer">
+            <div class="info">
+              <h3>Pubg mobile hacked</h3>
+              <p>
+                <span style="color: green; font-size: 20px; font-weight: 700"
+                  >5.45GB</span
+                >
+                Traf
+              </p>
+            </div>
+
+            <button
+              class="download-btn btn primary openPopup"
+              data-download="https://www.google.com"
+            >
+              Download
+            </button>
+          </div>
+        </article>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+      </section>
+
+      <div class="ad ad-footer">Ad 1200 × 250</div>
+
+      <!-- Footer -->
+      <footer>
+        <span>By Faramawy</span>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
